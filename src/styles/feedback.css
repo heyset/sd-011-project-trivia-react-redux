@@ -1,0 +1,77 @@
+.feedback{
+  background-color:  #DDE3F0;
+  height: 85vh;
+  font-size: 22px;
+  justify-content: flex-start;
+}
+
+.feedback img{
+  border-radius: 100%;
+  height: 150px;
+}
+
+.feedbackBtns{
+  display: flex;
+}
+
+.btn {
+  border: none;
+  padding: 12px 20px;
+  background-color: rgb(90, 88, 88);
+  color: #DDE3F0;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -7px;
+  left: -7px;
+  border-top: 5px solid #0E1647;
+  border-left: 5px solid #0E1647;
+  transition: all 0.25s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -7px;
+  right: -7px;
+  border-bottom: 5px solid #E51C44;
+  border-right: 5px solid #E51C44;
+  transition: all 0.25s;
+}
+
+.btn:hover::before, .btn:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback p {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.feedback p span {
+  padding-left: 10px;
+}
+
+.scoreFinal {
+  margin-bottom: 100px;
+  border: 1px solid #243189;
+  border-radius: 16px;
+  background-color: #243189;
+  padding: 10px 100px;
+  color: #DDE3F0;
+}

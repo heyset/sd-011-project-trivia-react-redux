@@ -1,0 +1,7 @@
+.choices--correct--picked {
+  border: 3px solid rgb(6, 240, 15);
+}
+
+.choices--wrong--picked {
+  border: 3px solid red;
+}

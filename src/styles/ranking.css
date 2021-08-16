@@ -1,0 +1,128 @@
+.ranking{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #E51C44;
+}
+
+.ranking ol {
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.ranking ol::-webkit-scrollbar {
+  width: 1px;
+}
+
+.ranking li {
+  background-color: #DDE3F0;
+  display: flex;
+  width: 700px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin: 15px;
+  border: 5px solid #0E1647;
+  border-radius: 70px;
+  color: #0E1647;
+}
+
+.ranking img {
+  border-radius: 100%;
+}
+
+.ranking li:nth-child(1) img{
+  border: 10px solid gold;
+}
+
+.ranking li:nth-child(2) img{
+  border: 10px solid silver;
+}
+
+.ranking li:nth-child(3) img{
+  border: 10px solid #CD7F32;
+}
+
+.ranking li:nth-child(1) {
+  background-color:  rgba(255, 217, 0, 0.603);
+  border: 5px solid gold;
+}
+
+.ranking li:nth-child(2) {
+  background-color:  rgb(153, 150, 150);
+  border: 5px solid silver;
+}
+
+.ranking li:nth-child(3) {
+  background-color:  #a06225;
+  border: 5px solid #CD7F32;
+}
+
+.ranking h1 {
+  color: #0E1647;
+  padding: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.ranking li p {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.divConfig{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 32px;
+  height: 15vh;
+}
+
+.btnRankingBack {
+  border: none;
+  padding: 12px 12px;
+  background-color: rgb(90, 88, 88);
+  color: #DDE3F0;
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+.btnRankingBack:before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -7px;
+  left: -7px;
+  border-top: 5px solid #DDE3F0;
+  border-left: 5px solid #DDE3F0;
+  transition: all 0.25s;
+}
+
+.btnRankingBack:after{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -7px;
+  right: -7px;
+  border-bottom: 5px solid #E51C44;
+  border-right: 5px solid #E51C44;
+  transition: all 0.25s;
+}
+
+.btnRankingBack:hover::before, .btnRankingBack:hover::after{
+  width: 100%;
+  height: 100%;
+}
+
+.xablau{
+  position: absolute;
+  top: 4vh;
+  left: 2vw;
+}

@@ -1,0 +1,21 @@
+.headerLayout {
+  background-color: #0E1647;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: #DDE3F0;
+  letter-spacing: 1px;
+}
+
+footer {
+  height: 5vh;
+  background-color: #0E1647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #DDE3F0;
+}

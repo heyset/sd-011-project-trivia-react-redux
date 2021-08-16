@@ -1,0 +1,122 @@
+.config{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btnBackDiv{
+  display:flex;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.config button{
+  width: 324px;
+  margin-top: 100px;
+}
+
+.config h2 {
+  line-height: 50px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #DDE3F0;
+}
+
+.config button, .btnBack{
+  border: none;
+  padding: 12px 30px;
+  background-color: rgb(90, 88, 88);
+  color: #DDE3F0;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.config button:before, .btnBack::before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -7px;
+  left: -7px;
+  border-top: 5px solid #DDE3F0;
+  border-left: 5px solid #DDE3F0;
+  transition: all 0.25s;
+}
+
+.config button:after, .btnBack::after{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -7px;
+  right: -7px;
+  border-bottom: 5px solid #E51C44;
+  border-right: 5px solid #E51C44;
+  transition: all 0.25s;
+}
+
+.config button:hover::before, .config button:hover::after, .btnBack:hover::before, .btnBack:hover::after{
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  font-size: 23px;
+  margin-top: 100px;
+}
+
+form select{
+  font-size: 23px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #243189;
+  border: none;
+  color: #DDE3F0;
+}
+
+form span {
+  margin: 10px;
+  padding-bottom: 10px;
+  color: #DDE3F0;
+}
+
+form select:focus{
+  border: 2px solid #DDE3F0;
+  outline: none;
+}
+
+.loadingConfig{
+  color: #484848;
+  font-size: 60px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  animation: lighting 0.8s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  height: 80vh;
+}
+
+@keyframes lighting{
+  0% {color: #484848;
+    text-shadow: none;}
+
+  50% {color: #0E1647;
+    text-shadow: 0 0 7px #0E1647, 0 0 50px #29389e;}
+
+  0% {color: #484848;
+    text-shadow: none;}
+}
+
